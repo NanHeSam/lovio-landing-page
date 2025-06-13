@@ -22,7 +22,7 @@ export default function ProblemSolutionSection() {
           <div className="flex-1 space-y-8">
             <div className="space-y-6">
               <h2 className="text-4xl md:text-5xl font-black text-black leading-tight">
-                Logging baby moments shouldn't slow you down.
+                Logging baby moments shouldn&apos;t slow you down.
               </h2>
               
               {/* Main paragraph */}
@@ -34,7 +34,7 @@ export default function ProblemSolutionSection() {
               <div className="mt-8 p-6 bg-gradient-to-r from-[#FFE6F2] to-[#F2F6FF] rounded-2xl">
                 <div className="space-y-3 text-lg md:text-xl text-gray-700 font-medium">
                   <p>Your hands are full.</p>
-                  <p>Your memory's hazy.</p>
+                  <p>Your memory&apos;s hazy.</p>
                   <p className="text-[#7B61FF] font-semibold">Lovio listens.</p>
                   <p className="text-[#7B61FF] font-semibold">You stay present.</p>
                 </div>

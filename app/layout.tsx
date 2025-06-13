@@ -13,9 +13,55 @@ const outfit = Outfit({
 })
 
 export const metadata: Metadata = {
-  title: "Lovio - Log with Love",
+  title: {
+    default: "Lovio - Log with Love",
+    template: "%s | Lovio"
+  },
   description:
     "Lovio captures feedings, sleep, and diapers the moment you say them—so you can stay hands-free and heart-full.",
+  keywords: ["baby tracking", "parenting app", "voice logging", "baby care", "feeding tracker", "sleep tracker"],
+  authors: [{ name: "Lovio Team" }],
+  creator: "Lovio",
+  publisher: "Lovio",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://lovio.me",
+    title: "Lovio - Log with Love",
+    description: "Lovio captures feedings, sleep, and diapers the moment you say them—so you can stay hands-free and heart-full.",
+    siteName: "Lovio",
+    images: [
+      {
+        url: "/lovio-icon.png",
+        width: 1200,
+        height: 630,
+        alt: "Lovio - Voice-powered baby tracking app",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lovio - Log with Love",
+    description: "Lovio captures feedings, sleep, and diapers the moment you say them—so you can stay hands-free and heart-full.",
+    images: ["/lovio-icon.png"],
+    creator: "@lovio",
+  },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+  },
 }
 
 export default function RootLayout({

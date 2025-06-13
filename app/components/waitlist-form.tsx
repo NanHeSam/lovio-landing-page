@@ -35,7 +35,7 @@ export default function WaitlistForm() {
         const errorData = await response.json()
         setError(errorData.message || 'submit failed, please try again')
       }
-    } catch (err) {
+    } catch {
       setError('network error')
     } finally {
       setIsLoading(false)
@@ -46,7 +46,7 @@ export default function WaitlistForm() {
     return (
       <div className="mt-6 text-center text-lovio-charcoal p-4 bg-lovio-blush/50 rounded-lg">
         <p className="flex items-center justify-center">
-          Thanks! We'll keep you posted <Heart className="w-5 h-5 ml-2 text-lovio-lavender fill-lovio-lavender" />
+          Thanks! We&apos;ll keep you posted <Heart className="w-5 h-5 ml-2 text-lovio-lavender fill-lovio-lavender" />
         </p>
       </div>
     )

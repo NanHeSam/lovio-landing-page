@@ -8,7 +8,7 @@ export default function HowItWorksSection() {
             How It Works
           </h2>
           <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-            Simply speak to Lovio and watch your baby's moments become lasting memories
+            Simply speak to Lovio and watch your baby&apos;s moments become lasting memories
           </p>
         </div>
 
@@ -23,7 +23,7 @@ export default function HowItWorksSection() {
             <div className="space-y-3">
               <div className="bg-[#7B61FF]/10 rounded-lg p-3">
                 <p className="text-sm font-medium text-[#7B61FF] mb-1">You say:</p>
-                <p className="text-gray-800 italic">"Lovio, baby started sleeping"</p>
+                <p className="text-gray-800 italic">&ldquo;Lovio, baby started sleeping&rdquo;</p>
               </div>
               <div className="bg-green-50 rounded-lg p-3">
                 <p className="text-sm font-medium text-green-700 mb-1">Lovio logs:</p>
@@ -41,7 +41,7 @@ export default function HowItWorksSection() {
             <div className="space-y-3">
               <div className="bg-[#7B61FF]/10 rounded-lg p-3">
                 <p className="text-sm font-medium text-[#7B61FF] mb-1">You say:</p>
-                <p className="text-gray-800 italic">"Lovio, baby woke up 3 min ago and started feeding"</p>
+                <p className="text-gray-800 italic">&ldquo;Lovio, baby woke up 3 min ago and started feeding&rdquo;</p>
               </div>
               <div className="bg-green-50 rounded-lg p-3">
                 <p className="text-sm font-medium text-green-700 mb-1">Lovio records:</p>
@@ -59,11 +59,11 @@ export default function HowItWorksSection() {
             <div className="space-y-3">
               <div className="bg-[#7B61FF]/10 rounded-lg p-3">
                 <p className="text-sm font-medium text-[#7B61FF] mb-1">You ask:</p>
-                <p className="text-gray-800 italic">"Lovio, when is the last feed?"</p>
+                <p className="text-gray-800 italic">&ldquo;Lovio, when is the last feed?&rdquo;</p>
               </div>
               <div className="bg-green-50 rounded-lg p-3">
                 <p className="text-sm font-medium text-green-700 mb-1">Lovio responds:</p>
-                <p className="text-gray-800">"Your last feeding was 2 hours and 27 minutes ago"</p>
+                <p className="text-gray-800">&ldquo;Your last feeding was 2 hours and 27 minutes ago&rdquo;</p>
               </div>
             </div>
           </div>
@@ -73,7 +73,7 @@ export default function HowItWorksSection() {
         <div className="text-center">
           <div className="inline-block bg-white/80 backdrop-blur-sm rounded-2xl px-8 py-6 shadow-lg">
             <p className="text-2xl md:text-3xl font-bold text-[#7B61FF] italic">
-              "Your words become memories."
+              &ldquo;Your words become memories.&rdquo;
             </p>
           </div>
         </div>
