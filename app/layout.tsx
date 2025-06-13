@@ -4,6 +4,7 @@ import { Outfit } from "next/font/google" // Import Outfit font
 import "./globals.css"
 import { cn } from "@/lib/utils"
 import { ThemeProvider } from "@/components/theme-provider"
+import Navigation from "./components/navigation"
 
 
 // Configure Outfit font
@@ -78,6 +79,7 @@ export default function RootLayout({
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <Navigation />
           {children}
         </ThemeProvider>
       </body>

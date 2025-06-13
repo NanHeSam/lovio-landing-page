@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function HeroSection() {
 
   return (
-    <section className="min-h-screen flex items-center bg-gradient-to-br from-[#FFE6F2] via-[#FCF9FF] to-[#F2F6FF] px-2 md:px-8">
+    <section className="min-h-screen flex items-center bg-gradient-to-br from-[#FFE6F2] via-[#FCF9FF] to-[#F2F6FF] px-2 md:px-8 pt-16">
       <div className="flex flex-col md:flex-row items-center w-full max-w-7xl mx-auto gap-x-20">
         {/* Left: Text */}
         <div className="flex-1 flex flex-col items-start md:pt-32 pt-16 md:pl-20 pl-2">
