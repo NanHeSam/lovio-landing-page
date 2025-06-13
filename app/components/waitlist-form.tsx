@@ -57,7 +57,7 @@ export default function WaitlistForm() {
       <Button
         onClick={() => setShowForm(true)}
         size="lg"
-        className="mt-8 rounded-full bg-lovio-blush text-lovio-charcoal hover:bg-lovio-powder-blue hover:text-lovio-charcoal px-8 py-6 text-lg font-semibold shadow-md transition-all duration-300 ease-in-out focus:ring-2 focus:ring-lovio-lavender focus:ring-offset-2"
+        className="mt-8 rounded-full bg-[#7B61FF] text-white hover:bg-[#6B51E6] hover:text-white px-8 py-6 text-lg font-semibold shadow-lg transition-all duration-300 ease-in-out focus:ring-2 focus:ring-[#7B61FF] focus:ring-offset-2 border-2 border-[#7B61FF]"
       >
         Join the Waitlist
       </Button>
@@ -85,7 +85,7 @@ export default function WaitlistForm() {
         type="submit"
         size="lg"
         disabled={isLoading}
-        className="w-full rounded-full bg-lovio-blush text-lovio-charcoal hover:bg-lovio-powder-blue hover:text-lovio-charcoal px-8 py-6 text-lg font-semibold shadow-md transition-all duration-300 ease-in-out focus:ring-2 focus:ring-lovio-lavender focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-full rounded-full bg-[#7B61FF] text-white hover:bg-[#6B51E6] hover:text-white px-8 py-6 text-lg font-semibold shadow-lg transition-all duration-300 ease-in-out focus:ring-2 focus:ring-[#7B61FF] focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed border-2 border-[#7B61FF]"
       >
         {isLoading ? 'Submitting...' : 'Notify Me'}
       </Button>

@@ -9,17 +9,6 @@ export default function HeroSection() {
       <div className="flex flex-col md:flex-row items-center w-full max-w-7xl mx-auto gap-x-20">
         {/* Left: Text */}
         <div className="flex-1 flex flex-col items-start md:pt-32 pt-16 md:pl-20 pl-2">
-          <div className="flex items-center mb-8">
-            <Image 
-              src="/lovio-icon.png" 
-              alt="Lovio logo" 
-              width={40} 
-              height={40} 
-              className="w-10 h-10"
-              priority
-            />
-            <span className="text-xl md:text-2xl font-extrabold text-[#7B61FF] ml-2 tracking-tight">Lovio</span>
-          </div>
           <h1 className="text-5xl md:text-6xl font-black text-black mb-6 leading-tight tracking-tight">
             Talk to Lovio,<br />Track with Love.
           </h1>

@@ -3,9 +3,11 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
+import { Menu, X } from "lucide-react";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,15 +23,16 @@ export default function Navigation() {
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
+    setIsMobileMenuOpen(false);
   };
 
   return (
     <nav
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled
+        isScrolled || isMobileMenuOpen
           ? "bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-200"
-          : "bg-transparent"
+          : "bg-white/80 backdrop-blur-sm shadow-sm border-b border-gray-100"
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -78,15 +81,54 @@ export default function Navigation() {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center space-x-2">
             <button
               onClick={() => scrollToSection("cta")}
-              className="bg-[#7B61FF] text-white px-4 py-2 rounded-full hover:bg-[#6B51E6] transition-colors duration-200 font-medium text-sm"
+              className="bg-[#7B61FF] text-white px-3 py-1.5 rounded-full hover:bg-[#6B51E6] transition-colors duration-200 font-medium text-xs"
             >
-              Join Waitlist
+              Join
+            </button>
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="p-2 text-gray-700 hover:text-[#7B61FF] transition-colors duration-200"
+              aria-label="Toggle menu"
+            >
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
         </div>
+        
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-gray-200">
+            <div className="px-4 py-4 space-y-3">
+              <button
+                onClick={() => scrollToSection("hero")}
+                className="block w-full text-left text-gray-700 hover:text-[#7B61FF] transition-colors duration-200 font-medium py-2"
+              >
+                Home
+              </button>
+              <button
+                onClick={() => scrollToSection("problem-solution")}
+                className="block w-full text-left text-gray-700 hover:text-[#7B61FF] transition-colors duration-200 font-medium py-2"
+              >
+                Features
+              </button>
+              <button
+                onClick={() => scrollToSection("how-it-works")}
+                className="block w-full text-left text-gray-700 hover:text-[#7B61FF] transition-colors duration-200 font-medium py-2"
+              >
+                How It Works
+              </button>
+              <button
+                onClick={() => scrollToSection("cta")}
+                className="block w-full bg-[#7B61FF] text-white px-6 py-3 rounded-full hover:bg-[#6B51E6] transition-colors duration-200 font-medium text-center mt-4"
+              >
+                Join Waitlist
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     </nav>
   );

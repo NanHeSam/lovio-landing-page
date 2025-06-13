@@ -47,7 +47,7 @@ export default function CTASection() {
         {/* Trust Indicators */}
         <div className="mt-12 pt-8 border-t border-white/20">
           <p className="text-white/70 text-sm mb-4">
-            Trusted by parents worldwide
+            Built by first time dad trsuted by my wife
           </p>
           <div className="flex justify-center items-center space-x-8 text-white/60">
             <div className="flex items-center space-x-2">
@@ -55,8 +55,8 @@ export default function CTASection() {
               <span className="text-sm">Privacy First</span>
             </div>
             <div className="flex items-center space-x-2">
-              <span className="text-2xl">📱</span>
-              <span className="text-sm">iOS & Android</span>
+              <span className="text-2xl">🤖</span>
+              <span className="text-sm">work with alexa and apple shortcut</span>
             </div>
             <div className="flex items-center space-x-2">
               <span className="text-2xl">🌟</span>

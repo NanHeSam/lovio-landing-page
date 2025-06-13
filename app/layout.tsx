@@ -1,5 +1,5 @@
 import type React from "react"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { Outfit } from "next/font/google" // Import Outfit font
 import "./globals.css"
 import { cn } from "@/lib/utils"
@@ -14,6 +14,7 @@ const outfit = Outfit({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://lovio.me'),
   title: {
     default: "Lovio - Log with Love",
     template: "%s | Lovio"
@@ -58,11 +59,12 @@ export const metadata: Metadata = {
     images: ["/lovio-icon.png"],
     creator: "@lovio",
   },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-  },
+}
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
 }
 
 export default function RootLayout({
